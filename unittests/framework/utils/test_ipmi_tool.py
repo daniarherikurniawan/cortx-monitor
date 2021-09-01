@@ -35,7 +35,7 @@ class TestIpmiTool(unittest.TestCase):
         self.mocked_values = {
             "BMC_INTERFACE>default": 'system',
             "/var/cortx/sspl/data/server/BMC_INTERFACE/ACTIVE_BMC_IF": 'system',
-            "ip": '10.0.0.1',
+            "ip": 'xx.xx.xx.xx',
             "user": 'adminBMC',
             "secret": ('gAAAAABgi9l0ZR5tSwBoLvDS4m2c6ps5rFzdo1'
                        '-o_mr43C8HYSw5mRRd63je_2251_QU-XlVhgEe_'

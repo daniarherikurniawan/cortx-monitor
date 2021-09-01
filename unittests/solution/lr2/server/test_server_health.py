@@ -34,7 +34,7 @@ NET_IO_COUNTERS = {
 NET_IF_ADDRESS = {
     'lo': [
         snicaddr(family=AF_INET, address='127.0.0.1',
-                 netmask='255.0.0.0', broadcast=None, ptp=None)
+                 netmask='xx.xx.xx.xx', broadcast=None, ptp=None)
         ]
 }
 

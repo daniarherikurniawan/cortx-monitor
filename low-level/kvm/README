@@ -36,7 +36,7 @@ systemctl restart sspl-ll
 
 7) Add/remove disks using 'virsh  detach-disk/attach-disk' command on kvm hypvisor
     a) ssh to the box running the kvm hypervisor
-    ssh 134.6.26.43 kvm6host (root/dcouser)
+    ssh xx.xx.xx.xx kvm6host (root/dcouser)
 
 	b) Find the desired host
 	virsh list

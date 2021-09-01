@@ -2221,7 +2221,7 @@ pxIPAddress                           OBJECT-TYPE
                                      MAX-ACCESS    read-only
                                      STATUS        deprecated
                                      DESCRIPTION
-                                          "The current IP address. A value of 0.0.0.0 indicates an error
+                                          "The current IP address. A value of xx.xx.xx.xx indicates an error
                                              or an unset option."
                                     ::= { unitConfigurationEntry 8 }
 
@@ -2230,7 +2230,7 @@ netmask                             OBJECT-TYPE
                                      MAX-ACCESS    read-only
                                      STATUS        deprecated
                                      DESCRIPTION
-                                          "The current netmask. A value of 0.0.0.0 indicates an error
+                                          "The current netmask. A value of xx.xx.xx.xx indicates an error
                                              or an unset option."
                                     ::= { unitConfigurationEntry 9 }
 
@@ -2240,7 +2240,7 @@ gateway                             OBJECT-TYPE
                                      MAX-ACCESS    read-only
                                      STATUS        deprecated
                                      DESCRIPTION
-                                          "The current gateway. A value of 0.0.0.0 indicates an error
+                                          "The current gateway. A value of xx.xx.xx.xx indicates an error
                                              or an unset option."
                                     ::= { unitConfigurationEntry 10 }
 
@@ -2391,10 +2391,10 @@ pxInetIPAddress                           OBJECT-TYPE
                                      MAX-ACCESS    read-only
                                      STATUS        deprecated
                                      DESCRIPTION
-                                          "The current IP address. A value of 0.0.0.0 indicates an error
+                                          "The current IP address. A value of xx.xx.xx.xx indicates an error
                                              or an unset option.
                                            This object is deprecated in favor of ipAddressTable from the IP-MIB (rfc4293).
-                                           For IPv6, its value is 0.0.0.0 "
+                                           For IPv6, its value is xx.xx.xx.xx "
                                     ::= { unitConfigurationEntry 51 }
 
 pxInetNetmask                             OBJECT-TYPE
@@ -2402,10 +2402,10 @@ pxInetNetmask                             OBJECT-TYPE
                                      MAX-ACCESS    read-only
                                      STATUS        deprecated
                                      DESCRIPTION
-                                          "The current netmask. A value of 0.0.0.0 indicates an error
+                                          "The current netmask. A value of xx.xx.xx.xx indicates an error
                                              or an unset option.
                                            This object is deprecated in favor of ipAddressTable from the IP-MIB (rfc4293).
-                                           For IPv6, its value is 0.0.0.0 "
+                                           For IPv6, its value is xx.xx.xx.xx "
                                     ::= { unitConfigurationEntry 52 }
 
 
@@ -2414,10 +2414,10 @@ pxInetGateway                             OBJECT-TYPE
                                      MAX-ACCESS    read-only
                                      STATUS        deprecated
                                      DESCRIPTION
-                                          "The current gateway. A value of 0.0.0.0 indicates an error
+                                          "The current gateway. A value of xx.xx.xx.xx indicates an error
                                              or an unset option.
                                            This object is deprecated in favor of ipAddressTable from the IP-MIB (rfc4293).
-                                           For IPv6, its value is 0.0.0.0 "
+                                           For IPv6, its value is xx.xx.xx.xx "
                                     ::= { unitConfigurationEntry 53 }
 
 loadShedding                             OBJECT-TYPE

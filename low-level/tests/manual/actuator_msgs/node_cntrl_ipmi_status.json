@@ -20,7 +20,7 @@
 			},
 		"actuator_request_type": {
 			"node_controller": {
-				"node_request": "IPMI: 172.16.1.129 status"
+				"node_request": "IPMI: xx.xx.xx.xx status"
 			}
 		}
 	}

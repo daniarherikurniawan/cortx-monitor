@@ -5,7 +5,7 @@ cortx:
 server_node:
   30512e5ae6df9f1ea02327bab45e499d:
     bmc:
-      ip: 198.120.10.1
+      ip: xx.xx.xx.xx
       secret: "gAAAAABgbfiX3MkzGmtbG9alJPoyTIOdveqBHMLAg6B2TqPADdLeQMMmTF-R02DeGQesapBwn54PVYxBelDXJG5_Il5Bgw7OuQ=="
       user: ADMIN
     hostname: ssc-vm-2217.colo.seagate.com
@@ -18,10 +18,10 @@ storage_enclosure:
     controller:
       secret: "gAAAAABgbfiX3MkzGmtbG9alJPoyTIOdveqBHMLAg6B2TqPADdLeQMMmTF-R02DeGQesapBwn54PVYxBelDXJG5_Il5Bgw7OuQ=="
       primary:
-        ip: 10.0.0.2
+        ip: xx.xx.xx.xx
         port: '80'
       secondary:
-        ip: 10.0.0.3
+        ip: xx.xx.xx.xx
         port: '80'
       type: Gallium
       user: admin
