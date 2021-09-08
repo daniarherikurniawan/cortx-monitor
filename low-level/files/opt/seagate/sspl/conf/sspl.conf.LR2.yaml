@@ -43,6 +43,9 @@ SSPL_LL_SETTING:
       - Smartctl
       - NodeHWactuator
       - RealStorActuator
+   sensor_recovery_count: 3
+   sensor_recovery_interval: 10
+   sensor_polling_cycle_time: 300
 
 INGRESSPROCESSOR:
    consumer_id: sspl_actuator
@@ -143,7 +146,7 @@ SERVICEMONITOR:
    thread_sleep: 1
    polling_frequency: 15
    threshold_inactive_time: 180
-   threshold_active_time: 30
+   threshold_waiting_time: 30
    monitored_services:
       - hare-consul-agent.service
       - elasticsearch.service

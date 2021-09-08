@@ -13,27 +13,24 @@
 # about this software or licensing, please email opensource@seagate.com or
 # cortx-questions@seagate.com.
 
-# Redirecting sspl support bundle logs to specific file for having concentrated debugging logs.
-# Rsyslog TCP and UDP server.
 
-# Provisioned node itself UDP & TCP receptions are enabled in /etc/rsyslog.conf
-# Having TCP & UDP reception here for SSPL will make conflicts with rsyslog.
-# So commented below the TCP and UDP server.
+from cortx.utils.security.cipher import Cipher
 
-# Star Rsyslog server on port 514
-$ModLoad imtcp
-$InputTCPServerRun 514
 
-$ModLoad imudp
-$UDPServerRun 514
+def gen_key(unique_seed, root_node):
+    # Generate key for decryption
+    key = Cipher.generate_key(unique_seed, root_node)
+    return key
 
-# Enables log redirection for SSPL Support Bundle
 
-set $.service = "sspl_sb";
-if ($programname == $.service ) then
-{
-    set $!message = $msg;
-    action(type="omfile" File="/var/log/cortx/sspl/sspl_support_bundle.log")
-    # Allow other messages logging into /var/log/messages
-    stop
-}
+def encrypt(key, text):
+    """Encrypt sensitive data. Ex: messaging credentials."""
+    # Before encrypting text we need to convert string to bytes using encode()
+    # method
+    return Cipher.encrypt(key, text.encode())
+
+
+def decrypt(key, text, caller=None):
+    """Decrypt the <text>."""
+    decrypt_text = Cipher.decrypt(key, text.encode("utf-8")).decode("utf-8")
+    return decrypt_text
